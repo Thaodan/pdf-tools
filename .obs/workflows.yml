@@ -1,0 +1,7 @@
+build_release:
+  steps:
+    - trigger_services:
+        project: home:Thaodan:emacs
+        package: emacs-pdf-tools-git
+  filters:
+    event: tag_push
